@@ -1,0 +1,71 @@
+/*V A R I A B L E S*/
+
+$cool-blue: #3b4455;
+$cool-brown: #504b37;
+$cool-white: #ffffff;
+
+$font-h1: 3.5rem;
+$font-h2: 2.5rem;
+
+$font-p1: 1.7rem;
+
+
+
+
+body {
+    background-color: $cool-white;
+
+    .container-header {
+        .bg-nav {
+            background-color: $cool-white;
+        }
+
+        .container-fluid {
+            
+            .navbar-brand {
+                img {
+                    width: 5rem;
+                    height: 5rem;
+                    margin-left: 2rem;
+                    margin-right: 2rem;
+                
+
+                    @media screen and (max-width: 650px) {
+                        width: 2.5rem;
+                        height: 2.5rem;
+                        margin-left: 2rem;
+                        margin-right: 2rem;
+                    }
+                }
+
+                img:hover {
+                    transform: scale(1.2);
+                    transition: .5s;
+                    color: #504b37;
+                }
+            }
+
+            .navbar-collapse {
+                .navbar-nav {
+                    a {
+                        font-size: 1.4rem;
+                        color: $cool-blue;
+                        font-weight: 400;
+                        margin-left: 2rem;
+                    }
+                }
+
+                .navbar-nav {
+                    a:hover {
+                        color: $cool-brown;
+                        transform: scale(1.2);
+                        transition: .5s;
+                    }
+                }
+            }
+
+        }
+
+    }
+    
+}

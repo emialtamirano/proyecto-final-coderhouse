@@ -1,0 +1,66 @@
+/*V A R I A B L E S*/
+
+$cool-blue: #3b4455;
+$cool-brown: #504b37;
+$cool-white: #ffffff;
+
+$font-h1: 3.5rem;
+$font-h2: 2.5rem;
+
+$font-p1: 1.7rem;
+$font-p2: 1.5rem;
+$font-p3: 1.3rem;
+
+
+
+body {
+    main {
+        .container-section1 {
+            display: flex;
+            padding: 20px;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background-color: $cool-blue;
+
+
+            img {
+                width: 600px;
+                height: 420px;
+
+                @media screen and (max-width:650px) {
+                    width: 100%;
+                    height: 300px;
+                }
+            }
+
+            .caja {
+                width: 600px; 
+                height: 420px;
+                background-color: $cool-white;
+                text-align: center;
+                display: flex;
+                align-items: center;
+
+                @media screen and (max-width:650px) {
+                    width: 100%;
+                    height: 350px;
+                    margin-bottom: 1rem;
+                }
+
+                p {
+                    font-size: $font-p2;
+                    @extend %parrafo;
+                    padding: 10px;
+                    line-height: 42px;
+
+                    @media screen and (max-width:650px) {
+                        font-size: $font-p3;
+                        line-height: normal;
+                        margin-top: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
