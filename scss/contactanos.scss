@@ -12,15 +12,19 @@ $font-p1: 1.7rem;
 $font-p2: 1.5rem;
 $font-p3: 1.3rem;
 
-body {
+
     main {
         .section-contact {
             position: relative;
             width: 100%;
-            height: 100vh;
+            height: 60rem;
             display: grid;
             place-items: center;
             background-color: $cool-white;
+
+            @media screen and (max-width:650px) {
+                height: 70rem;
+            }
     
             .contact-form {
                 position: relative;
@@ -29,10 +33,14 @@ body {
                 gap: 20px;
                 padding: 40px;
                 width: 90%;
-                height: 90%;
+                height: 60rem;
                 background: #dbd9d9;
                 box-shadow: 1px 9px 20px -5px rgba(0, 0, 0, 0.59);
                 border-radius: 30px;
+
+                @media screen and (max-width:650px) {
+                    height: 70rem;
+                }
     
                 .form {
                     position: relative;
@@ -44,7 +52,7 @@ body {
                     margin-left: 30px;
     
                     .texto {
-                        h1 {
+                        h3 {
                             color: $cool-brown;
                             font-size: $font-h3;
                             margin-bottom: 10px;
@@ -135,5 +143,13 @@ body {
             }
         }
     }
-}
+    
+
+
+
+
+
+
+
+
 
